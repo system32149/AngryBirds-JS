@@ -1,0 +1,13 @@
+let releaseBuild = false;
+let showEditor = true;
+let cheatsEnabled = false;
+let isPremium = false;
+let isKorea = false;
+let applyChinaRestictions = false;
+let gameVersionNumber = "1.6.3.1";
+let g_registrationEnabled = false;
+let g_updateCheckEnabled = true;
+let customer = "Mod Base";
+let customerString = "Rovio";
+let svnRevisionNumber = "Mod Base";
+let isSeasonsAvailable = true;
