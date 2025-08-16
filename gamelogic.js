@@ -4,6 +4,19 @@ let deviceModel = "windows";
 
 let postHighscores = true;
 
+// SETTINGS Object
+let settings = {
+    fullscreen: false,
+    screenWidth: screenWidth,
+    screenHeight: 768
+};
+
+// REGISTRATIONSURL Object
+let registrationURLs = {
+    registrationURL: "",
+    validationURL: ""
+};
+
 // pink bird values
 let pigDefenceBoost = 50;
 let bubbleAntiGravity = 1.8;
@@ -100,15 +113,15 @@ let sound_birds = "bird_misc"; //bird idle sounds
 let sound_pigs = "piglette"; //pig idle sounds
 
 if (releaseBuild == true) {
-    let /*registrationURLs.*/ validationURL =
+    registrationURLs. validationURL =
             "http://drm-pc.angrybirdsgame.com/validateKey/?";
-    let /*registrationURLs.*/ registrationURL =
+    registrationURLs. registrationURL =
             "http://drm-pc.angrybirdsgame.com/consumeKey/?";
     //let registrationKeys = {fullGame = "SABC2011FL"}
 } else {
-    let /*registrationURLs.*/ validationURL =
+    registrationURLs. validationURL =
             "http://dev.angrybirds.com/drm/validateKey/?";
-    let /*registrationURLs.*/ registrationURL =
+    registrationURLs. registrationURL =
             "http://dev.angrybirds.com/drm/consumeKey/?";
     //let registrationKeys = {fullGame = "shop-full-abc-pc-test"}
 }
@@ -163,26 +176,25 @@ function createStartUpAssets() {
     //ll_G.res.createAudioOutput(2, 16, 44100)
 
     if (deviceModel != "roku") {
-        if (/*settings.*/ fullScreen == null) {
-            let /*settings.*/ fullScreen = true;
+        if (settings.fullScreen == null) {
+            settings.fullScreen = true;
         } else {
             //the game already starts in full screen mode by default, so if it is in full screen, we don't make an extra call
-            if (/*settings.*/ fullScreen == false) {
-                setFullScreenMode(/*settings.*/ fullScreen);
+            if (settings.fullScreen == false) {
+                setFullScreenMode(settings.fullScreen);
 
                 let t_minimumScreenWidth = 1024;
                 let t_minimumScreenHeight = 600;
-                /*
 				if (settings.screenWidth == null) {
 				  settings.screenWidth = t_minimumScreenWidth;
 				}
 				
 				if (settings.screenHeight == null) {
-					/*settings.screenHeight = t_minimumScreenHeight;
-				}*/
+					settings.screenHeight = t_minimumScreenHeight;
+				}
                 /*
-				let t_width = _G.math.max(t_minimumScreenWidth, settings.screenWidth)
-				let t_height = _G.math.max(t_minimumScreenHeight, settings.screenHeight)
+				let t_width = _G.math.max(t_minimumScreenWidth, settings.screenWidth);
+				let t_height = _G.math.max(t_minimumScreenHeight, settings.screenHeight);
 				*/
                 //setResolution(t_width, t_height)
             }
