@@ -3,14 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <title>Angry Birds</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+        <script>eruda.init();</script>
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
         <h1>Angry Birds</h1>
 
         <canvas
             id="canvas"
-            width="1024"
-            height="768"
+            width="640"
+            height="480"
             style="border: 1px solid #000000"
         >
             Your browser does not support AngryBirds-JS.
@@ -25,7 +29,12 @@
             console.log("Loading gamelogic.js");
         </script>
         <footer>
-            <small>AngryBirds-JS v0.0.1 • based on Angry Birds v1.6.3.1 • <a href="credits.html">Credits</a></small>
+            <script>
+                let moreInfo = document.createElement('small');
+                moreInfo.textContent = `AngryBirds-JS v${abjsVersionNumber} • based on Angry Birds v${gameVersionNumber}`;
+                document.body.appendChild(moreInfo);
+            </script>
+            <p><a href="credits.html">Credits</a></p>
         </footer>
     </body>
 </html>

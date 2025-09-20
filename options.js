@@ -1,10 +1,11 @@
+let gameVersionNumber = "1.6.3.1";
+let abjsVersionNumber = "0.0.2";
 let releaseBuild = false;
 let showEditor = true;
 let cheatsEnabled = false;
 let isPremium = false;
 let isKorea = false;
 let applyChinaRestictions = false;
-let gameVersionNumber = "1.6.3.1";
 let g_registrationEnabled = false;
 let g_updateCheckEnabled = true;
 let customer = "Mod Base";
