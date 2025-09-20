@@ -2,63 +2,39 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/index.css" />
-
         <title>Angry Birds</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+        <script>eruda.init();</script>
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
         <h1>Angry Birds</h1>
 
         <canvas
             id="canvas"
-            width="1280"
-            height="720"
+            width="640"
+            height="480"
             style="border: 1px solid #000000"
         >
             Your browser does not support AngryBirds-JS.
         </canvas>
         <!-- scripts -->
-        <script src="gamelogic.js"></script>
-        <script>
-            console.log("Loading gamelogic.js");
-        </script>
         <script src="options.js"></script>
         <script>
             console.log("Loading options.js");
         </script>
-        <script src="default_conf.js"></script>
+        <script src="gamelogic.js"></script>
         <script>
-            console.log("Loading default_conf.js");
-        </script>
-        <script src="game_conf.js"></script>
-        <script>
-            console.log("Loading game_conf.js");
-        </script>
-        <script src="utils.js"></script>
-        <script>
-            console.log("Loading utils.js");
-        </script>
-        <script src="events.js"></script>
-        <script>
-            console.log("Loading events.js");
-        </script>
-        <script src="ui_components/Frame.js"></script>
-        <script>
-            console.log("Loading ui_components/Frame.js");
-        </script>
-        <!--<script src="subsystemsapi.js"></script>
-          <script>console.log("Loading subsystemsapi.js");</script>-->
-        <script src="menus/splashes.js"></script>
-        <script>
-            console.log("Loading menus/splashes.js");
-        </script>
-        <script src="menus/main_menu.js"></script>
-        <script>
-            console.log("Loading menus/main_menu.js");
+            console.log("Loading gamelogic.js");
         </script>
         <footer>
-            <small>AngryBirds-JS v0.0.1 | based off Angry Birds v3.0.1</small>
+            <script>
+                let moreInfo = document.createElement('small');
+                moreInfo.textContent = `AngryBirds-JS v${abjsVersionNumber} • based on Angry Birds v${gameVersionNumber}`;
+                document.body.appendChild(moreInfo);
+            </script>
+            <p><a href="credits.html">Credits</a></p>
         </footer>
     </body>
 </html>

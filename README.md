@@ -1,9 +1,17 @@
 # Angry Birds in HTML5
-This is a port of Angry Birds Classic (version 3.0.1, based on 3.0.1 Fix) to HTML5 (HTML/CSS/JavaScript).
+This is a port of Angry Birds Classic (based off the 1.6.3 mod-base) to HTML5.
 
->[!CAUTION]
->This project is still in a VERY EARLY state, still
->being really basic.
+>[!NOTE]
+>This project is in a VERY EARLY state, being
+>really basic.
+
+<!--
+## Installation
+Download the [latest release](https://github.com/system32149/AngryBirds-JS/releases/latest),
+unzip the file that you downloaded, 
+-->
+## Credits
+1.6.3.1 Modding Base by 1000 STUDIO
 
 ## Disclaimer
-This mod is not affiliated with Rovio in any way.
+This project is not affiliated with Rovio in any way.
