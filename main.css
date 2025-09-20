@@ -1,3 +1,8 @@
+/** 
+ * Angry Birds's old font used in 1.6.3.1,
+ * Used for basically everything in the
+ * canvas
+ */
 @font-face {
   font-family: "AngryBirds";
   src: url("fonts/angrybirds-regular.ttf");
